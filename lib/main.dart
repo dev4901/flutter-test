@@ -5,7 +5,7 @@ Widget helloFlutter() {
     child: Container(
       height: 400.0,
       width: 300.0,
-      color: Colors.pink,
+      //color: Colors.pink,
       child: Center(
         child: Image.asset("images/diamond.png"),
       ),
