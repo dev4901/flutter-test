@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 Widget helloFlutter() {
   return Center(
     child: Container(
@@ -8,36 +7,27 @@ Widget helloFlutter() {
       width: 300.0,
       color: Colors.pink,
       child: Center(
-        child:  Text(
-          'Hello, World',
-          style: TextStyle(
-            fontSize: 40.0,
-            backgroundColor: Color.fromARGB(255, 31, 32, 33),
-            color: Colors.white
-          ),
-        ),
+        child: Image.asset("images/diamond.png"),
       ),
     ),
   );
 }
 
 void main() {
-  runApp(
-    MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Hello, Flutter'),
-          centerTitle: true,
-        ),
-        body: helloFlutter(),
-        floatingActionButton: FloatingActionButton(
-          child: Icon(Icons.add),
-          onPressed: () {
-            print('Clicked');
-          },
-        ),
-      ),  
-    )
-  );
+  runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
+    home: Scaffold(
+      appBar: AppBar(
+        title: Text('Hello, Flutter'),
+        centerTitle: true,
+      ),
+      body: helloFlutter(),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.add),
+        onPressed: () {
+          print('Clicked');
+        },
+      ),
+    ),
+  ));
 }
